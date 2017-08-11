@@ -12,9 +12,19 @@
       <fieldset>
         <legend>Email Submission (fake)</legend>
         <label for='name'>Enter name: </label>
-        <input id='name-input' type='text' name='name' placeholer'Enter your name' value='' required/>
+        <input id='name-input' type='text' name='name' placeholder='Enter your name' value='' required />
+        <br>
         <label for='email'>Enter email: </label>
-        <input id='name-input' type='email' name='email' placeholer'you@somewhere.outthere' value='' required />
+        <input id='email-input' type='email' name='email' placeholder='you@somewhere.outthere' value='' required />
+        <br>
+        <label for="phone">Enter Phone:</label>
+        <input type="phone" id='phone-input' required placeholder='555-555-5555' value='' name='phoneNumber'>
+
+        <br>
+        <label for='message'>Enter your message here:</label>
+        <br>
+        <textarea name="message" cols="30" rows="10"></textarea>
+
         <input type='submit' value='Send Email' />
       </fieldset>
       </form>

@@ -4,12 +4,12 @@ var bodyParser = require('body-parser');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Fun with Forms!' });
+  res.render('index', { title: 'FindYourNextCatsitter.com' });
 });
 
-router.post('/complete', function(req, res, next) {
-  console.log(req.body);
-  res.render('complete', req.body);
+router.post('/complete', function(request, response, next) {
+  console.log(request.body);
+  response.render('complete', request.body);
 });
 
 module.exports = router;
